@@ -7,8 +7,11 @@ import { Component ,OnInit,Input} from '@angular/core';
 })
 export class PostComponent implements OnInit {
   title:string = "List of Posts"
- @Input() fromParent : string | undefined;
   postParentMessage:string = "message coming from post components"
+  childMessage:string="From child Components";
+
+  @Input() fromParent : string | undefined;
+
   constructor() {
   }
   ngOnInit():void{
